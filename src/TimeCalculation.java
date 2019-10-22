@@ -31,7 +31,7 @@ public class TimeCalculation {
         float by = now - born;
         float bm = by*month;
         float bw = by*bm*week;
-        float bd =
+        float bd = 20;
         float bh =
         float bmin =
         float bsec =
