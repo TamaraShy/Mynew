@@ -24,17 +24,23 @@ public class TimeCalculation {
         float year = 365;
         float month = 12;
         float week =7;
-        float day = 24;
-        float hour = 60;
-        float min = 60;
-        float sec = 60;
+        float day1 = 24;
+        float hour1 = 60;
+        float min1 = 60;
+        float sec1 = 60;
         float by = now - born;
         float bm = by*month;
-        float bw = by*bm*week;
-        float bd = 20;
-        float bh =
-        float bmin =
-        float bsec =
+        float bd = by*year;
+        float bw = bd/week;
+        float bh = bd*day1;
+        float bmin = bh*min1;
+        float bsec = bmin*sec1;
         System.out.println("I been in years =" + by);
+        System.out.println("I been in months =" + bm);
+        System.out.println("I been in weeks =" + bw);
+        System.out.println("I been in days =" + bd);
+        System.out.println("I been in hours =" + bh);
+        System.out.println("I been in minutes =" + bmin);
+        System.out.println("I been in seconds =" + bsec);
     }
 }
